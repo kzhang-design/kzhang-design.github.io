@@ -33,3 +33,21 @@ a {
     text-decoration: none;
 }
 
+#web-ring {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color:#e4b389;
+    font-family: futura;
+    font-size: 10px;
+  }
+
+  #web-ring a:link {
+    color: #d6ecf5;
+    text-decoration: none;
+  }
+
+  #web-ring a:hover {
+    text-decoration: underline;
+  }
