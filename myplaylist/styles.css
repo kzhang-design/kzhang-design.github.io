@@ -1,0 +1,62 @@
+
+
+body {
+    background-image: linear-gradient(#f0c8ee, #9b69a5);
+}
+
+iframe {
+    display:block;
+    margin: auto;
+    margin-top: -25%;
+    margin-bottom: 200px;
+
+}
+
+.sparkle1 {
+    display: block;
+    width: 400px;
+    margin-left: 60vw;
+
+}
+
+.sparkle2 {
+    position: absolute;
+    width:400px;
+    margin-top:-70px;
+    margin-right: 0px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: futura;
+    margin-top: 90px;
+    margin-bottom: -80px;
+    }
+
+
+.fade {
+    animation-name: fade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-direction: alternate;
+}
+
+    @keyframes fade {
+        0% {
+            opacity: 1;
+            transform: translateY(-10px); 
+        }
+        25% {
+            opacity: .7;
+        }
+        50% { transform: translateY(0px); }
+        75% {
+            opacity: 1;
+        }
+        100% {
+            opacity: .5;
+            transform: translateY(-10px); 
+        }
+    }

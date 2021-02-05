@@ -51,3 +51,22 @@ a {
   #web-ring a:hover {
     text-decoration: underline;
   }
+
+  #web-ring2 {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    background-color:#e4b389;
+    font-family: futura;
+    font-size: 10px;
+  }
+
+  #web-ring2 a:link {
+    color: #d6ecf5;
+    text-decoration: none;
+  }
+
+  #web-ring2 a:hover {
+    text-decoration: underline;
+  }
