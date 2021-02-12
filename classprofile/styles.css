@@ -70,3 +70,9 @@ a {
   #web-ring2 a:hover {
     text-decoration: underline;
   }
+
+  .firefly {
+    position: fixed;
+   width: 10%;
+   height: 20%;
+  }
