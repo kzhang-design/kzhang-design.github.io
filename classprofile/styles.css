@@ -72,7 +72,6 @@ a {
   }
 
   .firefly {
-    position: fixed;
-   width: 10%;
-   height: 20%;
+   width: 400px;
+   height: 400px;
   }
