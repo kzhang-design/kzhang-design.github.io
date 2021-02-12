@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<title>Fungus :)</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+
+
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d58f83a3-8cc0-4663-a55f-43243850e6fc/dbgqcbs-f97587a8-406a-49d2-bf27-0b47c9a15552.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZDU4ZjgzYTMtOGNjMC00NjYzLWE1NWYtNDMyNDM4NTBlNmZjXC9kYmdxY2JzLWY5NzU4N2E4LTQwNmEtNDlkMi1iZjI3LTBiNDdjOWExNTU1Mi5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.FoMjQSYoN-GOldbyiJKG4DtwukwHLRb_b2UlaBPJ2Aw" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>Home</p>
+  </a>
+  <a href="#Introduction" class="w3-bar-item w3-button w3-padding-large w3-hover-white ">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>Introduction</p>
+  </a>
+  <a href="#Etymology" class="w3-bar-item w3-button w3-padding-large w3-hover-white ">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>Etymology</p>
+  </a>
+  <a href="#Characteristics" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>Characteristics</p>
+  </a>
+  <a href="#Diversity" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>Diversity</p>
+  </a>
+  <a href="#Mycology" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>Mycology</p>
+  </a>
+  <a href="#Morphology" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>Morphology</p>
+  </a>
+  <a href="#Growth and physiology" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>Growth and physiology</p>
+  </a>
+  <a href="#Reproduction" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>Reproduction</p>
+  </a>
+  <a href="#Evolution" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>Evolution</p>
+  </a>
+  <a href="#Taxonomy" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>Taxonomy</p>
+  </a>
+  <a href="#Ecology" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>Ecology</p>
+  </a>
+  <a href="#Mycotoxins" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>Mycotoxins</p>
+  </a>
+  <a href="#Pathogenic mechanisms" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>Pathogenic mechanisms</p>
+  </a>
+  <a href="#Human use" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>Human use</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">Home</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">Etymology</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">Characteristics</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">Diversity</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">Mycology</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">Morphology</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">Growth and physiology</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">Reproduction</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">Evolution</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">Taxonomy</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">Ecology</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">Mycotoxins</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">Pathogenic mechanisms</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">Human use</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center " id="home">
+    <h1 class="w3-jumbo">Fungus</h1>
+    <p>From Wikipedia, the free encyclopedia</p>
+    <br>
+    <img src="https://mvfilmsociety.com/wp-content/uploads/2019/12/Fantastic-Funghi.gif" alt="shrooms" class="w3-image" width="100%" height="1108">
+  </header>
+
+
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Introduction">
+    <h2 class="w3-text-white">Introduction</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p> A fungus (plural: fungi[2] or funguses[3]) is any member of the group of eukaryotic organisms that includes microorganisms such as yeasts and molds, as well as the more familiar mushrooms. These organisms are classified as a kingdom, which is separate from the other eukaryotic life kingdoms of plants and animals.
+<br><br>
+      A characteristic that places fungi in a different kingdom from plants, bacteria, and some protists is chitin in their cell walls. Fungi, like animals, are heterotrophs; they acquire their food by absorbing dissolved molecules, typically by secreting digestive enzymes into their environment. Fungi do not photosynthesize. Growth is their means of mobility, except for spores (a few of which are flagellated), which may travel through the air or water. Fungi are the principal decomposers in ecological systems. These and other differences place fungi in a single group of related organisms, named the Eumycota (true fungi or Eumycetes), which share a common ancestor (from a monophyletic group), an interpretation that is also strongly supported by molecular phylogenetics. This fungal group is distinct from the structurally similar myxomycetes (slime molds) and oomycetes (water molds). The discipline of biology devoted to the study of fungi is known as mycology (from the Greek μύκης mykes, mushroom). In the past, mycology was regarded as a branch of botany, although it is now known fungi are genetically more closely related to animals than to plants.
+      <br><br>
+      Abundant worldwide, most fungi are inconspicuous because of the small size of their structures, and their cryptic lifestyles in soil or on dead matter. Fungi include symbionts of plants, animals, or other fungi and also parasites. They may become noticeable when fruiting, either as mushrooms or as molds. Fungi perform an essential role in the decomposition of organic matter and have fundamental roles in nutrient cycling and exchange in the environment. They have long been used as a direct source of human food, in the form of mushrooms and truffles; as a leavening agent for bread; and in the fermentation of various food products, such as wine, beer, and soy sauce. Since the 1940s, fungi have been used for the production of antibiotics, and, more recently, various enzymes produced by fungi are used industrially and in detergents. Fungi are also used as biological pesticides to control weeds, plant diseases and insect pests. Many species produce bioactive compounds called mycotoxins, such as alkaloids and polyketides, that are toxic to animals including humans. The fruiting structures of a few species contain psychotropic compounds and are consumed recreationally or in traditional spiritual ceremonies. Fungi can break down manufactured materials and buildings, and become significant pathogens of humans and other animals. Losses of crops due to fungal diseases (e.g., rice blast disease) or food spoilage can have a large impact on human food supplies and local economies.
+      <br><br>
+      The fungus kingdom encompasses an enormous diversity of taxa with varied ecologies, life cycle strategies, and morphologies ranging from unicellular aquatic chytrids to large mushrooms. However, little is known of the true biodiversity of Kingdom Fungi, which has been estimated at 2.2 million to 3.8 million species.[4] Of these, only about 148,000 have been described,[5] with over 8,000 species known to be detrimental to plants and at least 300 that can be pathogenic to humans.[6] Ever since the pioneering 18th and 19th century taxonomical works of Carl Linnaeus, Christian Hendrik Persoon, and Elias Magnus Fries, fungi have been classified according to their morphology (e.g., characteristics such as spore color or microscopic features) or physiology. Advances in molecular genetics have opened the way for DNA analysis to be incorporated into taxonomy, which has sometimes challenged the historical groupings based on morphology and other traits. Phylogenetic studies published in the first decade of the 21st century have helped reshape the classification within Kingdom Fungi, which is divided into one subkingdom, seven phyla, and ten subphyla.  </p>
+    </p>
+    
+  </div>
+  
+
+  <img class="img" src="https://i.gifer.com/7ZEs.gif">
+ 
+
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Etymology">
+    <h2 class="w3-text-white">Etymology</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p> The English word fungus is directly adopted from the Latin fungus (mushroom), used in the writings of Horace and Pliny.[7] This in turn is derived from the Greek word sphongos (σφόγγος "sponge"), which refers to the macroscopic structures and morphology of mushrooms and molds;[8] the root is also used in other languages, such as the German Schwamm ("sponge") and Schimmel ("mold").[9]<br><br>
+      The word mycology is derived from the Greek mykes (μύκης "mushroom") and logos (λόγος "discourse").[10] It denotes the scientific study of fungi. The Latin adjectival form of "mycology" (mycologicæ) appeared as early as 1796 in a book on the subject by Christiaan Hendrik Persoon.[11] The word appeared in English as early as 1824 in a book by Robert Kaye Greville.[12] In 1836 the English naturalist Miles Joseph Berkeley's publication The English Flora of Sir James Edward Smith, Vol. 5. also refers to mycology as the study of fungi.[8][13]
+      <br><br>
+      A group of all the fungi present in a particular area or geographic region is known as mycobiota (plural noun, no singular), e.g., "the mycobiota of Ireland".[14]
+      <br>
+  </div>
+
+
+  
+
+
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Characteristics">
+    <h2 class="w3-text-white">Characteristics</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p> Before the introduction of molecular methods for phylogenetic analysis, taxonomists considered fungi to be members of the plant kingdom because of similarities in lifestyle: both fungi and plants are mainly immobile, and have similarities in general morphology and growth habitat. Like plants, fungi often grow in soil and, in the case of mushrooms, form conspicuous fruit bodies, which sometimes resemble plants such as mosses. The fungi are now considered a separate kingdom, distinct from both plants and animals, from which they appear to have diverged around one billion years ago (around the start of the Neoproterozoic Era).[15][16] Some morphological, biochemical, and genetic features are shared with other organisms, while others are unique to the fungi, clearly separating them from the other kingdoms:<br><br>
+      <br><br>
+      Shared features:
+<br>
+- With other eukaryotes: Fungal cells contain membrane-bound nuclei with chromosomes that contain DNA with noncoding regions called introns and coding regions called exons. Fungi have membrane-bound cytoplasmic organelles such as mitochondria, sterol-containing membranes, and ribosomes of the 80S type.[17] They have a characteristic range of soluble carbohydrates and storage compounds, including sugar alcohols (e.g., mannitol), disaccharides, (e.g., trehalose), and polysaccharides (e.g., glycogen, which is also found in animals[18]).
+<br>
+- With animals: Fungi lack chloroplasts and are heterotrophic organisms and so require preformed organic compounds as energy sources.[19]
+<br>
+- With plants: Fungi have a cell wall[20] and vacuoles.[21] They reproduce by both sexual and asexual means, and like basal plant groups (such as ferns and mosses) produce spores. Similar to mosses and algae, fungi typically have haploid nuclei.[22]
+<br>
+- With euglenoids and bacteria: Higher fungi, euglenoids, and some bacteria produce the amino acid L-lysine in specific biosynthesis steps, called the α-aminoadipate pathway.[23][24]
+<br>
+- The cells of most fungi grow as tubular, elongated, and thread-like (filamentous) structures called hyphae, which may contain multiple nuclei and extend by growing at their tips. Each tip contains a set of aggregated vesicles—cellular structures consisting of proteins, lipids, and other organic molecules—called the Spitzenkörper.[25] Both fungi and oomycetes grow as filamentous hyphal cells.[26] In contrast, similar-looking organisms, such as filamentous green algae, grow by repeated cell division within a chain of cells.[18] There are also single-celled fungi (yeasts) that do not form hyphae, and some fungi have both hyphal and yeast forms.[27]
+<br>
+- In common with some plant and animal species, more than 70 fungal species display bioluminescence.[28]
+<br><br>
+Unique features:
+<br>
+- Some species grow as unicellular yeasts that reproduce by budding or fission. Dimorphic fungi can switch between a yeast phase and a hyphal phase in response to environmental conditions.[27]
+<br>
+- The fungal cell wall is composed of glucans and chitin; while glucans are also found in plants and chitin in the exoskeleton of arthropods,[29][30] fungi are the only organisms that combine these two structural molecules in their cell wall. Unlike those of plants and oomycetes, fungal cell walls do not contain cellulose.[31]
+     <br><br>
+     Most fungi lack an efficient system for the long-distance transport of water and nutrients, such as the xylem and phloem in many plants. To overcome this limitation, some fungi, such as Armillaria, form rhizomorphs,[32] which resemble and perform functions similar to the roots of plants. As eukaryotes, fungi possess a biosynthetic pathway for producing terpenes that uses mevalonic acid and pyrophosphate as chemical building blocks.[33] Plants and some other organisms have an additional terpene biosynthesis pathway in their chloroplasts, a structure that fungi and animals do not have.[34] Fungi produce several secondary metabolites that are similar or identical in structure to those made by plants.[33] Many of the plant and fungal enzymes that make these compounds differ from each other in sequence and other characteristics, which indicates separate origins and convergent evolution of these enzymes in the fungi and plants.[33][35]
+      <br>
+  </div>
+
+  <img class="img" src="https://thumbs.gfycat.com/AcidicBeneficialHackee-size_restricted.gif">
+
+ 
+
+  
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Diversity">
+    <h2 class="w3-text-white">Diversity</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p> 
+      Fungi have a worldwide distribution, and grow in a wide range of habitats, including extreme environments such as deserts or areas with high salt concentrations[36] or ionizing radiation,[37] as well as in deep sea sediments.[38] Some can survive the intense UV and cosmic radiation encountered during space travel.[39] Most grow in terrestrial environments, though several species live partly or solely in aquatic habitats, such as the chytrid fungi Batrachochytrium dendrobatidis and B. salamandrivorans, parasites that has been responsible for a worldwide decline in amphibian populations. These organisms spend part of their life cycle as a motile zoospore, enabling them to propel itself through water and enter their amphibian host.[40] Other examples of aquatic fungi include those living in hydrothermal areas of the ocean.[41]
+<br><br>
+As of 2020, around 148,000 species of fungi have been described by taxonomists,[5] but the global biodiversity of the fungus kingdom is not fully understood.[42] A 2017 estimate suggests there may be between 2.2 and 3.8 million species.[4] The number of new fungi species discovered yearly has increased from 1,000 to 1,500 per year about 10 years ago, to about 2000 with a peak of more than 2,500 species in 2016. In the year 2019, 1882 new species of fungi were described, and it was estimated that more than 90% of fungi remain unknown.[5] In mycology, species have historically been distinguished by a variety of methods and concepts. Classification based on morphological characteristics, such as the size and shape of spores or fruiting structures, has traditionally dominated fungal taxonomy.[43] Species may also be distinguished by their biochemical and physiological characteristics, such as their ability to metabolize certain biochemicals, or their reaction to chemical tests. The biological species concept discriminates species based on their ability to mate. The application of molecular tools, such as DNA sequencing and phylogenetic analysis, to study diversity has greatly enhanced the resolution and added robustness to estimates of genetic diversity within various taxonomic groups.[44]
+      </p>
+  </div>
+
+
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Mycology">
+    <h2 class="w3-text-white">Mycology</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p> 
+      Mycology is the branch of biology concerned with the systematic study of fungi, including their genetic and biochemical properties, their taxonomy, and their use to humans as a source of medicine, food, and psychotropic substances consumed for religious purposes, as well as their dangers, such as poisoning or infection. The field of phytopathology, the study of plant diseases, is closely related because many plant pathogens are fungi.[45]
+    <br><br>
+    The use of fungi by humans dates back to prehistory; Ötzi the Iceman, a well-preserved mummy of a 5,300-year-old Neolithic man found frozen in the Austrian Alps, carried two species of polypore mushrooms that may have been used as tinder (Fomes fomentarius), or for medicinal purposes (Piptoporus betulinus).[46] Ancient peoples have used fungi as food sources–often unknowingly–for millennia, in the preparation of leavened bread and fermented juices. Some of the oldest written records contain references to the destruction of crops that were probably caused by pathogenic fungi.[47]
+    </p>
+    <h3>History</h3>
+    <p>Mycology is a relatively new science that became systematic after the development of the microscope in the 17th century. Although fungal spores were first observed by Giambattista della Porta in 1588, the seminal work in the development of mycology is considered to be the publication of Pier Antonio Micheli's 1729 work Nova plantarum genera.[48] Micheli not only observed spores but also showed that, under the proper conditions, they could be induced into growing into the same species of fungi from which they originated.[49] Extending the use of the binomial system of nomenclature introduced by Carl Linnaeus in his Species plantarum (1753), the Dutch Christian Hendrik Persoon (1761–1836) established the first classification of mushrooms with such skill as to be considered a founder of modern mycology. Later, Elias Magnus Fries (1794–1878) further elaborated the classification of fungi, using spore color and microscopic characteristics, methods still used by taxonomists today. Other notable early contributors to mycology in the 17th–19th and early 20th centuries include Miles Joseph Berkeley, August Carl Joseph Corda, Anton de Bary, the brothers Louis René and Charles Tulasne, Arthur H. R. Buller, Curtis G. Lloyd, and Pier Andrea Saccardo. In the 20th and 21st centuries, advances in biochemistry, genetics, molecular biology, biotechnology, DNA sequencing and phylogenetic analysis has provided new insights into fungal relationships and biodiversity, and has challenged traditional morphology-based groupings in fungal taxonomy.[50]</p>
+  </div>
+
+
+  <img class="img" src="https://media1.tenor.com/images/604a2f31a0c140f6148975f3461964e2/tenor.gif?itemid=17121519">
+
+
+
+
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Morphology">
+    <h2 class="w3-text-white">Morphology</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <h3>Microscopic structures</h3>
+<p>
+  Most fungi grow as hyphae, which are cylindrical, thread-like structures 2–10 µm in diameter and up to several centimeters in length. Hyphae grow at their tips (apices); new hyphae are typically formed by emergence of new tips along existing hyphae by a process called branching, or occasionally growing hyphal tips fork, giving rise to two parallel-growing hyphae.[51] Hyphae also sometimes fuse when they come into contact, a process called hyphal fusion (or anastomosis). These growth processes lead to the development of a mycelium, an interconnected network of hyphae.[27] Hyphae can be either septate or coenocytic. Septate hyphae are divided into compartments separated by cross walls (internal cell walls, called septa, that are formed at right angles to the cell wall giving the hypha its shape), with each compartment containing one or more nuclei; coenocytic hyphae are not compartmentalized.[52] Septa have pores that allow cytoplasm, organelles, and sometimes nuclei to pass through; an example is the dolipore septum in fungi of the phylum Basidiomycota.[53] Coenocytic hyphae are in essence multinucleate supercells.[54]
+<br><br>
+Many species have developed specialized hyphal structures for nutrient uptake from living hosts; examples include haustoria in plant-parasitic species of most fungal phyla, and arbuscules of several mycorrhizal fungi, which penetrate into the host cells to consume nutrients.[55]
+<br><br>
+Although fungi are opisthokonts—a grouping of evolutionarily related organisms broadly characterized by a single posterior flagellum—all phyla except for the chytrids have lost their posterior flagella.[56] Fungi are unusual among the eukaryotes in having a cell wall that, in addition to glucans (e.g., β-1,3-glucan) and other typical components, also contains the biopolymer chitin.[57]
+</p>
+<h3>Macroscopic structures</h3>
+<p>
+  Fungal mycelia can become visible to the naked eye, for example, on various surfaces and substrates, such as damp walls and spoiled food, where they are commonly called molds. Mycelia grown on solid agar media in laboratory petri dishes are usually referred to as colonies. These colonies can exhibit growth shapes and colors (due to spores or pigmentation) that can be used as diagnostic features in the identification of species or groups.[58] Some individual fungal colonies can reach extraordinary dimensions and ages as in the case of a clonal colony of Armillaria solidipes, which extends over an area of more than 900 ha (3.5 square miles), with an estimated age of nearly 9,000 years.[59]
+<br><br>
+  The apothecium—a specialized structure important in sexual reproduction in the ascomycetes—is a cup-shaped fruit body that is often macroscopic and holds the hymenium, a layer of tissue containing the spore-bearing cells.[60] The fruit bodies of the basidiomycetes (basidiocarps) and some ascomycetes can sometimes grow very large, and many are well known as mushrooms.
+</p>
+
+</div>
+
+<img class="img" src="https://media1.tenor.com/images/7fe14c0b66a6e2dc6d315f44c095a3cd/tenor.gif?itemid=17120731">
+
+
+
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Growth and physiology">
+  <h2 class="w3-text-white">Growth and physiology</h2>
+  <hr style="width:200px" class="w3-opacity">
+<p>
+  The growth of fungi as hyphae on or in solid substrates or as single cells in aquatic environments is adapted for the efficient extraction of nutrients, because these growth forms have high surface area to volume ratios.[61] Hyphae are specifically adapted for growth on solid surfaces, and to invade substrates and tissues.[62] They can exert large penetrative mechanical forces; for example, many plant pathogens, including Magnaporthe grisea, form a structure called an appressorium that evolved to puncture plant tissues.[63] The pressure generated by the appressorium, directed against the plant epidermis, can exceed 8 megapascals (1,200 psi).[63] The filamentous fungus Paecilomyces lilacinus uses a similar structure to penetrate the eggs of nematodes.[64]
+  <br><br>
+  The mechanical pressure exerted by the appressorium is generated from physiological processes that increase intracellular turgor by producing osmolytes such as glycerol.[65] Adaptations such as these are complemented by hydrolytic enzymes secreted into the environment to digest large organic molecules—such as polysaccharides, proteins, and lipids—into smaller molecules that may then be absorbed as nutrients.[66][67][68] The vast majority of filamentous fungi grow in a polar fashion (extending in one direction) by elongation at the tip (apex) of the hypha.[69] Other forms of fungal growth include intercalary extension (longitudinal expansion of hyphal compartments that are below the apex) as in the case of some endophytic fungi,[70] or growth by volume expansion during the development of mushroom stipes and other large organs.[71] Growth of fungi as multicellular structures consisting of somatic and reproductive cells—a feature independently evolved in animals and plants[72]—has several functions, including the development of fruit bodies for dissemination of sexual spores (see above) and biofilms for substrate colonization and intercellular communication.[73]
+  <br><br>
+  The fungi are traditionally considered heterotrophs, organisms that rely solely on carbon fixed by other organisms for metabolism. Fungi have evolved a high degree of metabolic versatility that allows them to use a diverse range of organic substrates for growth, including simple compounds such as nitrate, ammonia, acetate, or ethanol.[74][75] In some species the pigment melanin may play a role in extracting energy from ionizing radiation, such as gamma radiation. This form of "radiotrophic" growth has been described for only a few species, the effects on growth rates are small, and the underlying biophysical and biochemical processes are not well known.[37] This process might bear similarity to CO2 fixation via visible light, but instead uses ionizing radiation as a source of energy.[76]
+</p>
+  </div>
+
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Reproduction">
+    <h2 class="w3-text-white">Reproduction</h2>
+    <hr style="width:200px" class="w3-opacity">
+<p>Fungal reproduction is complex, reflecting the differences in lifestyles and genetic makeup within this diverse kingdom of organisms.[77] It is estimated that a third of all fungi reproduce using more than one method of propagation; for example, reproduction may occur in two well-differentiated stages within the life cycle of a species, the teleomorph and the anamorph.[78] Environmental conditions trigger genetically determined developmental states that lead to the creation of specialized structures for sexual or asexual reproduction. These structures aid reproduction by efficiently dispersing spores or spore-containing propagules.</p>
+<br>
+<h3>Asexual reproduction</h3>
+<p>Asexual reproduction occurs via vegetative spores (conidia) or through mycelial fragmentation. Mycelial fragmentation occurs when a fungal mycelium separates into pieces, and each component grows into a separate mycelium. Mycelial fragmentation and vegetative spores maintain clonal populations adapted to a specific niche, and allow more rapid dispersal than sexual reproduction.[79] The "Fungi imperfecti" (fungi lacking the perfect or sexual stage) or Deuteromycota comprise all the species that lack an observable sexual cycle.[80] Deuteromycota is not an accepted taxonomic clade and is now taken to mean simply fungi that lack a known sexual stage.</p>
+<br>
+<h3>Sexual reproduction</h3>
+<p>
+  Sexual reproduction with meiosis has been directly observed in all fungal phyla except Glomeromycota[81] (genetic analysis suggests meiosis in Glomeromycota as well). It differs in many aspects from sexual reproduction in animals or plants. Differences also exist between fungal groups and can be used to discriminate species by morphological differences in sexual structures and reproductive strategies.[82][83] Mating experiments between fungal isolates may identify species on the basis of biological species concepts.[83] The major fungal groupings have initially been delineated based on the morphology of their sexual structures and spores; for example, the spore-containing structures, asci and basidia, can be used in the identification of ascomycetes and basidiomycetes, respectively. Fungi employ two mating systems: heterothallic species allow mating only between individuals of the opposite mating type, whereas homothallic species can mate, and sexually reproduce, with any other individual or itself.[84]
+  <br><br>
+  Most fungi have both a haploid and a diploid stage in their life cycles. In sexually reproducing fungi, compatible individuals may combine by fusing their hyphae together into an interconnected network; this process, anastomosis, is required for the initiation of the sexual cycle. Many ascomycetes and basidiomycetes go through a dikaryotic stage, in which the nuclei inherited from the two parents do not combine immediately after cell fusion, but remain separate in the hyphal cells (see heterokaryosis).[85]
+  <br><br>
+  In ascomycetes, dikaryotic hyphae of the hymenium (the spore-bearing tissue layer) form a characteristic hook at the hyphal septum. During cell division, the formation of the hook ensures proper distribution of the newly divided nuclei into the apical and basal hyphal compartments. An ascus (plural asci) is then formed, in which karyogamy (nuclear fusion) occurs. Asci are embedded in an ascocarp, or fruiting body. Karyogamy in the asci is followed immediately by meiosis and the production of ascospores. After dispersal, the ascospores may germinate and form a new haploid mycelium.[86]
+  <br><br>
+  Sexual reproduction in basidiomycetes is similar to that of the ascomycetes. Compatible haploid hyphae fuse to produce a dikaryotic mycelium. However, the dikaryotic phase is more extensive in the basidiomycetes, often also present in the vegetatively growing mycelium. A specialized anatomical structure, called a clamp connection, is formed at each hyphal septum. As with the structurally similar hook in the ascomycetes, the clamp connection in the basidiomycetes is required for controlled transfer of nuclei during cell division, to maintain the dikaryotic stage with two genetically different nuclei in each hyphal compartment.[87] A basidiocarp is formed in which club-like structures known as basidia generate haploid basidiospores after karyogamy and meiosis.[88] The most commonly known basidiocarps are mushrooms, but they may also take other forms (see Morphology section).
+  <br><br>
+  In fungi formerly classified as Zygomycota, haploid hyphae of two individuals fuse, forming a gametangium, a specialized cell structure that becomes a fertile gamete-producing cell. The gametangium develops into a zygospore, a thick-walled spore formed by the union of gametes. When the zygospore germinates, it undergoes meiosis, generating new haploid hyphae, which may then form asexual sporangiospores. These sporangiospores allow the fungus to rapidly disperse and germinate into new genetically identical haploid fungal mycelia.[89]
+</p>
+<br>
+<h3>Spore dispersal</h3>
+<p>
+  Both asexual and sexual spores or sporangiospores are often actively dispersed by forcible ejection from their reproductive structures. This ejection ensures exit of the spores from the reproductive structures as well as traveling through the air over long distances.
+  <br><br>
+Specialized mechanical and physiological mechanisms, as well as spore surface structures (such as hydrophobins), enable efficient spore ejection.[90] For example, the structure of the spore-bearing cells in some ascomycete species is such that the buildup of substances affecting cell volume and fluid balance enables the explosive discharge of spores into the air.[91] The forcible discharge of single spores termed ballistospores involves formation of a small drop of water (Buller's drop), which upon contact with the spore leads to its projectile release with an initial acceleration of more than 10,000 g;[92] the net result is that the spore is ejected 0.01–0.02 cm, sufficient distance for it to fall through the gills or pores into the air below.[93] Other fungi, like the puffballs, rely on alternative mechanisms for spore release, such as external mechanical forces. The hydnoid fungi (tooth fungi) produce spores on pendant, tooth-like or spine-like projections.[94] The bird's nest fungi use the force of falling water drops to liberate the spores from cup-shaped fruiting bodies.[95] Another strategy is seen in the stinkhorns, a group of fungi with lively colors and putrid odor that attract insects to disperse their spores.[96]
+<br><br>
+Most of the researched species of fungus are transported by wind.[97][98] Such species often produce dry or hydrophobic spores which do not absorb water and are readily scattered by raindrops, for example.[97][99][100
+</p>
+</div>
+
+
+
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Evolution">
+  <h2 class="w3-text-white">Evolution</h2>
+  <hr style="width:200px" class="w3-opacity">
+
+</div>
+
+
+
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Taxonomy">
+  <h2 class="w3-text-white">Taxonomy</h2>
+  <hr style="width:200px" class="w3-opacity">
+
+</div>
+
+
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Ecology">
+  <h2 class="w3-text-white">Ecology</h2>
+  <hr style="width:200px" class="w3-opacity">
+
+</div>
+
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Mycotoxins">
+  <h2 class="w3-text-white">Mycotoxins</h2>
+  <hr style="width:200px" class="w3-opacity">
+
+</div>
+
+
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Pathogenic mechanisms">
+  <h2 class="w3-text-white">Pathogenic mechanisms</h2>
+  <hr style="width:200px" class="w3-opacity">
+
+</div>
+
+
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Human use">
+  <h2 class="w3-text-white">Human use</h2>
+  <hr style="width:200px" class="w3-opacity">
+
+
+
+
+
+
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Designed by <a href="https://kzhang-design.github.io/" target="_blank" class="w3-hover-text-green">Kaitlyn Zhang</a></p>
+ 
+  </footer>
+
+
+</div>
+
+</body>
+</html>
