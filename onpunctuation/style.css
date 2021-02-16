@@ -15,8 +15,8 @@ img{
 
 #cursor{
     position: fixed;
-      width: 300px;
-      height: 300px;
+      width: 500px;
+      height: 500px;
       top: 50vh;
       left: 48.85%;
       transform: translate(-50%, -50%);
@@ -39,19 +39,72 @@ img{
 #par1 {
   display:block;
   position: relative;
-  width: 150%;
+  width: 50%;
   height: 100%;
-  margin-left: 15%;
+  margin-left: 10%;
   margin-top: 15%;
 
 }
 
 .linkstyle {
     color:white;
+    backdrop-filter: invert;
+}
+
+/* PARAGRAPH 1 START*/
+
+
+
+.alone {
+  position: absolute;
+  animation-name: alone;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.entirely {
+  font-size: 160%;
+}
+.completely {
+  font-size: 200%;
+}
+.uninteresting {
+ font-style: italic;
+ margin-left: 95%;
+}
+.therefore {
+  font-size: 110%;
+}
+.therefore1 {
+  font-size: 130%;
+}
+.therefore2 {
+  font-size: 150%;
+}
+.therefore3 {
+  font-size: 170%;
+}
+
+
+/* PARAGRAPH 1 END */
+
+
+
+@keyframes alone {
+  0% {left: 10%}
+    50% {left: 50%}
+    100% {left: 10%}
 }
 
 
 
+
+
+
+
+
+/* BACKGROUND WHITE */
   
   @keyframes bug1 {
     0% {left: 60%; top:63%;}
