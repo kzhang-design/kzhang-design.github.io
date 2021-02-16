@@ -1,4 +1,160 @@
-#follower{
-    position: absolute;
-    float: left;
+
+body {
+    background-color: rgb(34, 34, 34);
 }
+
+
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* remove extra space below image */
+}
+
+
+
+#cursor{
+    position: fixed;
+      width: 300px;
+      height: 300px;
+      top: 50vh;
+      left: 48.85%;
+      transform: translate(-50%, -50%);
+      transition: all 0.15s ease;
+}
+
+
+
+
+
+.nocursor { cursor:none; }
+    
+.text1 {
+  color:rgb(34, 34, 34);
+  font-family: Arial, Helvetica, sans-serif ;
+  font-weight: bold;
+  font-size: 150%;
+}
+
+#par1 {
+  display:block;
+  position: relative;
+  width: 150%;
+  height: 100%;
+  margin-left: 15%;
+  margin-top: 15%;
+
+}
+
+.linkstyle {
+    color:white;
+}
+
+
+
+  
+  @keyframes bug1 {
+    0% {left: 60%; top:63%;}
+    50% {left: 10%; top:45%;}
+    100% {left: 60%; top:63%;}
+  }
+  
+  @keyframes bug2 {
+    0% {left: 13%; top:90%;}
+    50% {left: 23%; top:10%;}
+    100% {left: 13%; top:90%;}
+  }
+  
+  @keyframes bug3 {
+    0% {left: 89%; top:3%;}
+    50% {left: 9%; top:75%;}
+    100% {left: 89%; top:3%;}
+  }
+  
+  @keyframes bug4 {
+    0% {left: 22%; top:40%;}
+    50% {left: 80%; top:25%;}
+    100% {left: 22%; top:40%;}
+  }
+  
+  
+  .firefly {
+    position: fixed;
+    width: 20%;
+    padding-top: 20%;
+    background: white;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: .7;
+    /*animation: glow 4s ease-in-out infinite; */
+  }
+  
+  
+  
+  .firefly:nth-child(1) {
+    left: 60%;
+    top: 63%;
+    animation-name: bug1;
+    animation-duration: 18s;
+    animation-timing-function: ease-in-out, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+    animation-delay: -2s;
+  }
+  
+  .firefly:nth-child(2) {
+    left: 13%;
+    top: 90%;
+    animation-name: bug2;
+    animation-duration: 23s;
+    animation-timing-function: ease-in-out, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+    animation-delay: 0s;
+  }
+  
+  .firefly:nth-child(3) {
+    left: 89%;
+    top: 3%;
+    animation-name: bug3;
+    animation-duration: 28s;
+    animation-timing-function: ease-in-out, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+  animation-delay: -3s;
+  }
+  
+  firefly:nth-child(4) {
+      display: none;
+      color:rgb(34, 34, 34);
+    left: 40%;
+    top: 15%;
+    animation-name: bug4;
+    animation-duration: 28s;
+    animation-timing-function: ease-in-out, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+  animation-delay: -3s;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
