@@ -16,7 +16,11 @@ window.onload = function(){
       if ( typeof x !== 'undefined' ){
           bsDiv.style.left = x + "px";
           bsDiv.style.top = y + "px";
-      }
+      }  else if (e.targetTouches) {
+        posX = e.targetTouches[0].clientX;
+        posY = e.targetTouches[0].clientY;
+        e.preventDefault();
+        }
   }, false);
 }
 
