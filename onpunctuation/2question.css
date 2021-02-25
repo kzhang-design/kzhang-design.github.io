@@ -64,11 +64,41 @@ font-weight: 300;
 
 
 
+.imagelink1 {
+  position: fixed;
+  display:inline;
+  left: 60%;
+  top: 63%;
+  opacity: .7;
+  filter: blur(5px);
+  animation-name: bug1;
+  animation-duration: 18s;
+  animation-timing-function: ease-in-out, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-delay: -2s;
+}
 
+.image {
+  display: block;
+ width: 20%;
+  height: auto;
+}
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
 
-
-
+.container:hover .overlay {
+  opacity: 1;
+}
 
 .text {
   color: white;
