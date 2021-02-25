@@ -5,6 +5,7 @@ html{
 
 
 body {
+    background-color: #161515;
 min-height: 100%;
 margin:0;
 padding: 0;
@@ -19,12 +20,12 @@ img{
 
 * {box-sizing: border-box;}
 
-.box1 {background-color: red;}
-.box2 {background-color: orange;}
-.box3 {background-color: yellow;}
-.box4 {background-color: green;}
-.box5 {background-color: blue;}
-.box6 {background-color: purple;}
+.box1 {background-color: none;}
+.box2 {background-color: none;}
+.box3 {background-color: #e21313;}
+.box4 {background-color: none;}
+.box5 {background-color: none;}
+.box6 {background-color: none;}
 
 
 
@@ -32,8 +33,11 @@ img{
 .container {
 margin: 0;
 display: flex;
+width: 100%;
 min-height:100vh;
 flex-wrap: wrap;
+align-items: center;
+justify-content: center;
 }
 
 
