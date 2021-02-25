@@ -86,9 +86,9 @@ font-weight: 300;
     width: 20%;
     padding-top: 20%;
     background: white;
-    border-radius: 50%;
-    filter: blur(80px);
-    opacity: .7;
+    border-radius: 90%;
+    filter: blur(100px);
+    opacity: .8;
     /*animation: glow 4s ease-in-out infinite; */
   }
   
