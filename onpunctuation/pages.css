@@ -80,26 +80,46 @@ animation: spin1 10s infinite linear;
 display: block;
 }
 
-
-
-
-
-
-
-
-.text {
-color: white;
-font-size: 20px;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
+.black {
+  color:rgb(34, 34, 34)
 }
 
+.button {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.arrow {
+  color:rgb(34, 34, 34);
+  text-decoration: none;
+  animation-name: arrow;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-direction: alternate;
+}
+
+  @keyframes arrow {
+      0% {  transform: translateY(-20px); }
+      
+      50% { transform: translateY(0px); }
+
+      100% {transform: translateY(-20px); 
+      }
+  }
 
 
 
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    }
 
 
 
@@ -286,6 +306,8 @@ margin-right:10%;
     color: rgb(34, 34, 34);
   }
   
+  
+
   .text1 {
     color:rgb(184, 184, 184);
     font-family: mr-eaves-modern, sans-serif;
@@ -293,6 +315,21 @@ margin-right:10%;
   font-weight: 300;
     font-size: 100%;
   }
+
+  .arrow {
+    color:rgb(184, 184, 184);
+    text-decoration: none;
+    animation-name: arrow;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-direction: alternate;
+  }
+
+
+
+
+
 
 
 
