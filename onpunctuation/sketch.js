@@ -19,7 +19,7 @@ window.onload = function(){
       }  else if (e.targetTouches) {
         posX = e.targetTouches[0].clientX;
         posY = e.targetTouches[0].clientY;
-        e.preventDefault();
+        /* e.preventDefault(); */
         }
   }, false);
 }
