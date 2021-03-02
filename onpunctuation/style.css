@@ -17,6 +17,10 @@ img{
     display: block; /* remove extra space below image */
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
 
 
 #cursor{
