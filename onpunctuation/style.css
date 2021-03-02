@@ -19,7 +19,7 @@ img{
 
 a {
   text-decoration: none;
-  color: white;
+  color:  rgb(34, 34, 34);
 }
 
 
@@ -282,6 +282,21 @@ body {
       50% {left: 9%; top:75%;}
       100% {left: 59%; top:3%;}
     }
+
+    a {
+      text-decoration: none;
+      color: rgb(184, 184, 184);
+    }
+    
+    .text1 {
+      color:rgb(184, 184, 184);
+      font-family: mr-eaves-modern, sans-serif;
+    font-style: Mr Eaves Mod OT Reg;
+    font-weight: 300;
+      font-size: 150%;
+    }
+
+
 
 }
 

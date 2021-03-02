@@ -1,76 +1,173 @@
 
 body {
-    background-color: rgb(34, 34, 34);
+  background-color: rgb(34, 34, 34);
 }
 
 h1{
-  color:rgb(34, 34, 34);
-  font-family: mr-eaves-modern, sans-serif;
+color:rgb(34, 34, 34);
+font-family: mr-eaves-modern, sans-serif;
 font-style: Mr Eaves Mod OT Reg;
 font-weight: 300;
-  font-size: 350%;
+font-size: 200%;
 }
 
 img{
-    max-width: 100%;
-    max-height: 100%;
-    display: block; /* remove extra space below image */
+  max-width: 100%;
+  max-height: 100%;
+  display: block; /* remove extra space below image */
+}
+
+a {
+text-decoration: none;
+color: white;
 }
 
 
-
 #cursor{
-    position: fixed;
-      width: 500px;
-      height: 500px;
-      top: 50vh;
-      left: 48.85%;
-      transform: translate(-50%, -50%);
-      transition: all 0.15s ease;
+  position: fixed;
+    width: 500px;
+    height: 500px;
+    top: 50vh;
+    left: 48.85%;
+    transform: translate(-50%, -50%);
+    transition: all 0.15s ease;
 }
 
 
 .nocursor { cursor:none; }
-    
+  
 .text1 {
-  color:rgb(34, 34, 34);
-  font-family: mr-eaves-modern, sans-serif;
+color:rgb(34, 34, 34);
+font-family: mr-eaves-modern, sans-serif;
 font-style: Mr Eaves Mod OT Reg;
 font-weight: 300;
-  font-size: 150%;
+font-size: 140%;
 }
 
 #par1 {
-  display:block;
-  position: relative;
-  width: 50%;
-  height: 100%;
-  padding-top: 10%;
-  padding-bottom: 10%;
-  margin:auto;
+display:block;
+position: relative;
+width: 50%;
+height: 100%;
+padding-top: 25%;
+margin-left: 20%;
 }
 
 
 #par2 {
-  display:block;
-  position: relative;
-  width: 50%;
-  height: 100%;
-  padding-top: 10%;
-  padding-bottom: 10%;
-  margin:auto;
+display:block;
+position: relative;
+width: 50%;
+height: 100%;
+padding-top: 2%;
+padding-bottom: 10%;
+margin-left: 20%;
+}
+
+
+.words {
+position: fixed;
+display:block;
+margin: center;
+width:250px; 
+right: 2%;
+top: 2%;
+}
+
+.rotate
+{
+animation: spin1 10s infinite linear;
+display: block;
 }
 
 
 
 
-.imagelink1 {
+
+
+
+
+.text {
+color: white;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes spin1 {
+0% { transform: rotate(0deg);}
+100% { transform: rotate(-360deg);}
+} 
+
+
+
+.linkstyle {
+  color:white;
+  backdrop-filter: invert;
+}
+
+.inline {
+display:inline;
+}
+
+/* BACKGROUND WHITE */
+
+@keyframes bug1 {
+  0% {left: 60%; top:63%;}
+  50% {left: 10%; top:45%;}
+  100% {left: 60%; top:63%;}
+}
+
+@keyframes bug2 {
+  0% {left: 13%; top:90%;}
+  50% {left: 23%; top:10%;}
+  100% {left: 13%; top:90%;}
+}
+
+@keyframes bug3 {
+  0% {left: 89%; top:3%;}
+  50% {left: 9%; top:75%;}
+  100% {left: 89%; top:3%;}
+}
+
+@keyframes bug4 {
+  0% {left: 22%; top:40%;}
+  50% {left: 80%; top:25%;}
+  100% {left: 22%; top:40%;}
+}
+
+
+
+
+
+.firefly {
   position: fixed;
   display:inline;
+  width: 20%;
+  padding-top: 20%;
+  background: white;
+  border-radius: 50%;
+  filter: blur(100px);
+
+}
+
+
+
+.firefly:nth-child(1) {
   left: 60%;
   top: 63%;
-  opacity: .7;
-  filter: blur(5px);
   animation-name: bug1;
   animation-duration: 18s;
   animation-timing-function: ease-in-out, ease-in-out;
@@ -78,149 +175,128 @@ font-weight: 300;
   animation-delay: -2s;
 }
 
-.image {
-  display: block;
- width: 20%;
-  height: auto;
+.firefly:nth-child(2) {
+  left: 13%;
+  top: 90%;
+  animation-name: bug2;
+  animation-duration: 23s;
+  animation-timing-function: ease-in-out, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-delay: 0s;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
+.firefly:nth-child(3) {
+  left: 89%;
+  top: 3%;
+  animation-name: bug3;
+  animation-duration: 28s;
+  animation-timing-function: ease-in-out, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+animation-delay: -3s;
 }
 
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+firefly:nth-child(4) {
+    display: none;
+    color:rgb(34, 34, 34);
+  left: 40%;
+  top: 15%;
+  animation-name: bug4;
+  animation-duration: 28s;
+  animation-timing-function: ease-in-out, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+animation-delay: -3s;
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-.linkstyle {
-    color:white;
-    backdrop-filter: invert;
+@media only screen and (max-width: 700px) {
+  
+  
+body {
+background-color: rgb(236, 236, 236);
 }
-
-.inline {
-  display:inline;
-}
-
-/* BACKGROUND WHITE */
-  
-  @keyframes bug1 {
-    0% {left: 60%; top:63%;}
-    50% {left: 10%; top:45%;}
-    100% {left: 60%; top:63%;}
-  }
-  
-  @keyframes bug2 {
-    0% {left: 13%; top:90%;}
-    50% {left: 23%; top:10%;}
-    100% {left: 13%; top:90%;}
-  }
-  
-  @keyframes bug3 {
-    0% {left: 89%; top:3%;}
-    50% {left: 9%; top:75%;}
-    100% {left: 89%; top:3%;}
-  }
-  
-  @keyframes bug4 {
-    0% {left: 22%; top:40%;}
-    50% {left: 80%; top:25%;}
-    100% {left: 22%; top:40%;}
-  }
-  
-  
- 
 
 
   .firefly {
-    position: fixed;
+    position: absolute;
     display:inline;
-    width: 20%;
-    padding-top: 20%;
-    background: white;
+    width: 40%;
+    padding-top: 40%;
+    background: rgb(34, 34, 34);
     border-radius: 50%;
-    filter: blur(100px);
-    opacity: .85;
-  }
-  
-  
-  
-  .firefly:nth-child(1) {
-    left: 60%;
-    top: 63%;
-    animation-name: bug1;
-    animation-duration: 18s;
-    animation-timing-function: ease-in-out, ease-in-out;
-    animation-iteration-count: infinite, infinite;
-    animation-delay: -2s;
-  }
-  
-  .firefly:nth-child(2) {
-    left: 13%;
-    top: 90%;
-    animation-name: bug2;
-    animation-duration: 23s;
-    animation-timing-function: ease-in-out, ease-in-out;
-    animation-iteration-count: infinite, infinite;
-    animation-delay: 0s;
-  }
-  
-  .firefly:nth-child(3) {
-    left: 89%;
-    top: 3%;
-    animation-name: bug3;
-    animation-duration: 28s;
-    animation-timing-function: ease-in-out, ease-in-out;
-    animation-iteration-count: infinite, infinite;
-  animation-delay: -3s;
-  }
-  
-  firefly:nth-child(4) {
-      display: none;
-      color:rgb(34, 34, 34);
-    left: 40%;
-    top: 15%;
-    animation-name: bug4;
-    animation-duration: 28s;
-    animation-timing-function: ease-in-out, ease-in-out;
-    animation-iteration-count: infinite, infinite;
-  animation-delay: -3s;
+    filter: blur(70px);
   }
 
 
 
+  #cursor{
+    position: fixed;
+      width: 300px;
+      height: 300px;
+      top: 50vh;
+      left: 48.85%;
+      transform: translate(-50%, -50%);
+      transition: all 0.15s ease;
+}
 
+  #par1 {
+    display:block;
+    position: relative;
+    width: 80%;
+    height: 100%;
+    padding-top: 70%;
+    margin-left: 10%;
+  }
+#par2 {
+display:block;
+position: relative;
+width: 80%;
+height: 100%;
+padding-top: 10%;
+padding-bottom: 10%;
+margin-left: 10%;
+margin-right:10%;
+}
+  h1{
+    color:rgb(236, 236, 236);
+    font-family: mr-eaves-modern, sans-serif;
+  font-style: Mr Eaves Mod OT Reg;
+  font-weight: 300;
+    font-size: 200%;
+  }
+
+  .words {
+    position: absolute;
+    display:block;
+    margin: center;
+    width:200px; 
+    left: 2%;
+    top: 2%;
+  }
+
+  @keyframes bug3 {
+    0% {left: 59%; top:3%;}
+    50% {left: 9%; top:75%;}
+    100% {left: 59%; top:3%;}
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+  }
   
+  .text1 {
+    color:rgb(184, 184, 184);
+    font-family: mr-eaves-modern, sans-serif;
+  font-style: Mr Eaves Mod OT Reg;
+  font-weight: 300;
+    font-size: 100%;
+  }
+
+
+
+}
 
 
 
@@ -236,11 +312,11 @@ font-weight: 300;
 
 
 .noselect {
-    -webkit-touch-callout: none; /* iOS Safari */
-      -webkit-user-select: none; /* Safari */
-       -khtml-user-select: none; /* Konqueror HTML */
-         -moz-user-select: none; /* Old versions of Firefox */
-          -ms-user-select: none; /* Internet Explorer/Edge */
-              user-select: none; /* Non-prefixed version, currently
-                                    supported by Chrome, Edge, Opera and Firefox */
-  }
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
