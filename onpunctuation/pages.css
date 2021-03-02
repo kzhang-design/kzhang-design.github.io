@@ -92,6 +92,7 @@ display: block;
 
 .arrow {
   color:rgb(34, 34, 34);
+  font-size: 200%;
   text-decoration: none;
   animation-name: arrow;
   animation-timing-function: ease-in-out;
