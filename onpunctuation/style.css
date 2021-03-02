@@ -269,7 +269,7 @@ body {
     }
 
     .words {
-      position: absolute;
+      position: fixed;
       display:block;
       margin: center;
       width:200px; 
