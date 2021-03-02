@@ -4,14 +4,6 @@ window.onload = function(){
 
   var x, y;
 
-  var parent = document.getElementById("parent");
-  var textbox = document.getElementById("textbox");
- 
-  parent.ontouchmove = function(e){
-      var target = document.elementFromPoint(e.originalEvent.changedTouches[0].clientX, e.originalEvent.changedTouches[0].clientY);
-    textbox.value = target.id;
-  }
-
 
 
 
@@ -31,3 +23,22 @@ window.onload = function(){
 }
 
 
+const THRESHOLD = 750
+
+$.fn.tap = function tap (cb) {
+  this.on('touchstart', startEvent => {
+    const tapHandler = endEvent => {
+      if (startEvent.target === endEvent.target) {
+        cb.call(startEvent.target, startEvent)
+      }
+    }
+
+    this.one('touchend', tapHandler)
+
+    window.setTimeout(() => {
+      this.off('touchend', tapHandler)
+    }, THRESHOLD)
+  })
+
+  return this
+}

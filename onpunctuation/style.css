@@ -196,7 +196,7 @@ animation: spin1 10s infinite linear;
   animation-delay: -3s;
   }
   
-  firefly:nth-child(4) {
+  .firefly:nth-child(4) {
       display: none;
       color:rgb(34, 34, 34);
     left: 40%;
@@ -213,7 +213,7 @@ animation: spin1 10s infinite linear;
   @media only screen and (max-width: 700px) {
   
 
-    /*
+
   
     body {
       background-color: rgb(236, 236, 236);
@@ -223,20 +223,38 @@ animation: spin1 10s infinite linear;
         .firefly {
           position: absolute;
           display:inline;
-          width: 40%;
-          padding-top: 40%;
+          width: 70%;
+          padding-top: 70%;
           background: rgb(34, 34, 34);
           border-radius: 50%;
-          filter: blur(70px);
+          filter: blur(90px);
         }
 
-        @keyframes bug3 {
-          0% {left: 59%; top:3%;}
-          50% {left: 9%; top:75%;}
-          100% {left: 59%; top:3%;}
-        }
+        
+.firefly:nth-child(1) {
+  left: 25%;
+  top: 53%;
+  animation: none;
+}
 
-*/
+.firefly:nth-child(2) {
+  left: 13%;
+  top: 80%;
+  animation: none;
+}
+
+.firefly:nth-child(3) {
+  left: 3%;
+  top: 3%;
+  animation: none;
+}
+
+.firefly:nth-child(4) {
+  left: 3%;
+  top: 13%;
+  animation: none;
+}
+}
 
 
 

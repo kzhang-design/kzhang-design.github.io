@@ -215,9 +215,7 @@ display:inline;
 animation-delay: -3s;
 }
 
-firefly:nth-child(4) {
-    display: none;
-    color:rgb(34, 34, 34);
+.firefly:nth-child(4) {
   left: 40%;
   top: 15%;
   animation-name: bug4;
@@ -230,6 +228,12 @@ animation-delay: -3s;
 
 
 
+
+
+
+
+
+
 @media only screen and (max-width: 700px) {
   
   
@@ -238,15 +242,20 @@ background-color: rgb(236, 236, 236);
 }
 
 
-  .firefly {
-    position: absolute;
-    display:inline;
-    width: 40%;
-    padding-top: 40%;
-    background: rgb(34, 34, 34);
-    border-radius: 50%;
-    filter: blur(70px);
-  }
+.firefly {
+  position: fixed;
+  display:inline;
+  width: 20%;
+  padding-top: 20%;
+  background: rgb(34, 34, 34);
+  border-radius: 50%;
+  filter: blur(100px);
+
+}
+
+
+
+
 
 
 
