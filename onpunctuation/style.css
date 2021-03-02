@@ -254,11 +254,6 @@ animation: spin1 10s infinite linear;
   top: 13%;
   animation: none;
 }
-}
-
-
-
-
 
 
 
@@ -338,13 +333,15 @@ animation: spin1 10s infinite linear;
         animation-direction: alternate;
       }
     
+
+
+    } 
     
     
     
     
     
     
-    }
     
     
 
