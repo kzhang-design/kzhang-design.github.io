@@ -4,7 +4,13 @@ window.onload = function(){
 
   var x, y;
 
-
+  var parent = document.getElementById("parent");
+  var textbox = document.getElementById("textbox");
+ 
+  parent.ontouchmove = function(e){
+      var target = document.elementFromPoint(e.originalEvent.changedTouches[0].clientX, e.originalEvent.changedTouches[0].clientY);
+    textbox.value = target.id;
+  }
 
 
 
@@ -19,7 +25,7 @@ window.onload = function(){
       }  else if (e.targetTouches) {
         posX = e.targetTouches[0].clientX;
         posY = e.targetTouches[0].clientY;
-        /* e.preventDefault(); */
+         e.preventDefault(); 
         }
   }, false);
 }
