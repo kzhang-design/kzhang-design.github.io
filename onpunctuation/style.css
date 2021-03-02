@@ -227,7 +227,7 @@ animation: spin1 10s infinite linear;
       
       
         .firefly {
-          position: absolute;
+          position: fixed;
           display:inline;
           width: 70%;
           padding-top: 70%;
