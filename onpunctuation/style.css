@@ -227,6 +227,7 @@ body {
       background: rgb(34, 34, 34);
       border-radius: 50%;
       filter: blur(70px);
+      transition: filter 0.3s ease;
     }
 
   
@@ -277,11 +278,6 @@ body {
       top: 2%;
     }
 
-    @keyframes bug3 {
-      0% {left: 59%; top:3%;}
-      50% {left: 9%; top:75%;}
-      100% {left: 59%; top:3%;}
-    }
 
     a {
       text-decoration: none;
@@ -294,6 +290,12 @@ body {
     font-style: Mr Eaves Mod OT Reg;
     font-weight: 300;
       font-size: 150%;
+    }
+
+    @keyframes bug3 {
+      0% {left: 59%; top:3%;}
+      50% {left: 9%; top:75%;}
+      100% {left: 59%; top:3%;}
     }
 
 
