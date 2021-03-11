@@ -1,0 +1,190 @@
+
+
+html{
+    min-height: 100%;
+}
+
+
+body {
+    background-color: #161515;
+min-height: 100%;
+margin:0;
+padding: 0;
+}
+
+
+
+
+
+* {box-sizing: border-box;}
+
+.box1 {
+    background-color:rgb(245, 159, 73);
+    width: 33.3333%;
+}
+
+.box2 {
+    background-color:paleturquoise;
+    width: 33.3333%;
+}
+
+
+.yellowcircle {
+    background-color: rgb(255, 238, 142);
+    height: 100%;
+    max-width: 100%;
+    border-radius: 50%;
+    padding-top: 10%;
+    margin: auto;
+    animation-name: yellow;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+  }
+  
+    @keyframes yellow {
+        0% {  background-color: yellow; }
+        
+        33% {  background-color: rgb(235, 94, 0); }
+
+        66% {  background-color: rgb(214, 25, 0); }
+  
+        100% {  background-color: yellow; }
+        }
+    
+
+.orangecircle {
+    background-color: rgb(235, 94, 0);
+    height: 80%;
+    max-width: 80%;
+    border-radius: 50%;
+    padding-top: 10%;
+    margin:auto;
+    animation-name: orange;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+  }
+  
+    @keyframes orange {
+        0% {  background-color: rgb(235, 94, 0); }
+        
+        33% {  background-color: rgb(214, 25, 0); }
+
+        66% {  background-color: yellow; }
+  
+        100% {  background-color: rgb(235, 94, 0); }
+        }
+
+.redcircle {
+    background-color: rgb(214, 25, 0);
+    height: 60%;
+    max-width: 60%;
+    border-radius: 50%;
+    margin:auto;
+    animation-name: red;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+  }
+  
+    @keyframes red {
+        0% {  background-color: rgb(214, 25, 0);}
+        
+        33% {  background-color: yellow;}
+
+        66% {  background-color: rgb(235, 94, 0) }
+  
+        100% {  background-color: rgb(214, 25, 0);}
+        }
+
+
+
+
+
+
+.bluecircle {
+    background-color: rgb(142, 182, 255);
+    height: 100%;
+    max-width: 100%;
+    border-radius: 50%;
+    padding-top: 10%;
+    margin: auto;
+    animation-name: blue;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+  }
+  
+    @keyframes blue {
+        0% {  background-color: rgb(142, 182, 255); }
+        
+        33% {  background-color: navy; }
+
+        66% {  background-color:  rgb(0, 217, 255); }
+  
+        100% {  background-color: rgb(142, 182, 255); }
+        }
+    
+
+.navycircle {
+    background-color: navy;
+    height: 80%;
+    max-width: 80%;
+    border-radius: 50%;
+    padding-top: 10%;
+    margin:auto;
+    animation-name: navy;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+  }
+  
+    @keyframes navy {
+        0% {  background-color: navy; }
+        
+        33% {  background-color: rgb(0, 217, 255); }
+
+        66% {  background-color: rgb(142, 182, 255);  }
+  
+        100% {  background-color: navy; }
+        }
+
+.cutecircle {
+    background-color: rgb(0, 217, 255);
+    height: 60%;
+    max-width: 60%;
+    border-radius: 50%;
+    margin:auto;
+    animation-name: cute;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+  }
+  
+    @keyframes cute {
+        0% {  background-color: rgb(0, 217, 255);}
+        
+        33% {  background-color: navy;}
+
+        66% {  background-color: rgb(142, 182, 255); }
+  
+        100% {  background-color: rgb(0, 217, 255);}
+        }
+
+
+
+.container {
+    margin: 0;
+    display: flex;
+    width: 100%;
+    min-height:100vh;
+    flex-wrap: wrap;
+ justify-content: center;
+    }
