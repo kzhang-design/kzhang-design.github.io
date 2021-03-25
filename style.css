@@ -1,0 +1,99 @@
+
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: rgb(39, 39, 39);
+  }
+
+
+h1 {
+    font-size: 100%;
+}
+
+
+
+  .container {
+    margin:auto;
+    padding-top: 10%;
+    justify-content: center;
+    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .container > div {
+    display: flex; 
+    flex-basis: calc(50% - 5%);  
+    justify-content: center;
+    flex-direction: column;
+  }
+  .container > div > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .box { margin: 1%; }
+  .box1 { background-color: white;
+    height: 200px;
+    border-radius: 0px 30px 30px 0px; }
+  .box2 { background-image: url(kaitlyn.jpg); 
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    opacity: 1;
+    border-radius: 50px 50px 0px 0px;
+    
+    backface-visibility: hidden;}
+  .box3 { background-color: rgb(248, 162, 123); 
+    height:300px;
+    margin-top: -95px;
+    border-radius: 0px 30px 0px 50px;}
+  .box4 { background-color: white; 
+    height: 200px;
+    border-radius: 0px 0px 0px 0px;}
+
+
+
+
+      
+      .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%)
+      }
+      
+      .box:hover .box2 {
+        opacity: 0.3;
+      }
+      
+      .box:hover .middle {
+        opacity: 1;
+      }
+      
+
+
+
+  
+
+@media only screen and (max-width: 450px) {
+
+    .container {
+        margin:auto;
+        padding-top: 30%;
+        justify-content: center;
+        max-height: 50%;
+        max-width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+      }
+
+
+}
