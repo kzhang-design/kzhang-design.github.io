@@ -8,6 +8,7 @@ function dragElement(elmnt) {
   } else {
   elmnt.onmousedown = dragMouseDown;
   }
+  
 
   function dragMouseDown(e) {
   e = e || window.event;

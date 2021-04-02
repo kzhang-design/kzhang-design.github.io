@@ -1,0 +1,58 @@
+
+body {
+    font-family: Arial;
+}
+
+
+h1 {
+    font-weight: normal;
+    font-size: 1rem;
+    margin:0;
+}
+
+#mydiv {
+    position: absolute;
+    z-index: 0;
+    border: 1px solid #3a3a3a;
+    text-align: center;
+    cursor: move;
+  }
+
+
+
+.frame {
+ margin: auto;
+ margin-top: 30px;
+width: 50vw;
+height: 80vh;
+background-color: red;
+overflow: auto;
+}
+
+
+
+.photo-container {
+    padding: 1rem;
+    margin: 1rem;
+   border: 1px solid black;
+    border-radius: 25px;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    cursor:initial;
+}
+
+.photo-image {
+    width: 200%;
+    height: auto;
+    display: none;
+
+}
+
+.photo-image.active {
+    display: block;
+}
+
+
+
+
