@@ -90,6 +90,9 @@ photoContainer.addEventListener("click", function(){
 
 
   });
+
+
+
 }
 
 
@@ -100,6 +103,9 @@ photoContainer.addEventListener("click", function(){
 
 
 //Make the DIV element draggagle:
+// dragElement(document.getElementById("mydiv"));
+// dragElement(document.querySelector(".photo-container"));
+
 dragElement(document.getElementById("mydiv"));
 	
 function dragElement(elmnt) {
