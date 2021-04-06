@@ -10,6 +10,8 @@ h1 {
     margin:0;
 }
 
+
+
 #mydiv {
     position: absolute;
     z-index: 0;
@@ -20,32 +22,36 @@ h1 {
 
 
 
+
 .frame {
  margin: auto;
-margin-top: 40px;
 width: 400px;
 height: 80vh;
-background-color: red;
+background-color: rgb(235, 229, 229);
 overflow: auto;
 }
 
 
 
 .photo-container {
-    padding: 1rem;
+padding-top: .5rem;
     margin: 1rem;
    border: 1px solid black;
+   background-color: white;
     border-radius: 25px;
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: 1fr 1fr;
     cursor:initial;
+    overflow: auto;
+    filter: drop-shadow(2px 2px 2px #b1abab);
 }
 
 .photo-image {
     width: 200%;
     height: auto;
     display: none;
+
 
 }
 

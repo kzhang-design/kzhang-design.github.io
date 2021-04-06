@@ -11,7 +11,7 @@ var base = new Airtable({ apiKey: "key5A9hAaqS9Pb2Xy" }).base(
 );
 
 //get the collection base select all the rows and specify functions that will recieve the data
-base("portraits").select({}).eachPage(gotPageOfPhotos, gotAllPhotos);
+base("portraits").select({view: "Grid view"}).eachPage(gotPageOfPhotos, gotAllPhotos);
 
 //an empty array to hold our data
 var photos = [];
