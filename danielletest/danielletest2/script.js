@@ -73,20 +73,6 @@ photoDescription.classList.add("photo-description");
 photoDescription.innerText = photo.fields.description;
 photoContainer.append(photoDescription);
 
-//////////////////////////////
-
-// add event listener 
-// when user clicks on container, image will appear or dissapear
-photoContainer.addEventListener("click", function(){
-  photoImage.classList.toggle("active");
-})
-
-
-var photoContainer = document.createElement("div");
-photoContainer.classList.add("image-container");
-document.querySelector(".container1").append(photoContainer);
-
-
 
 // image to container
 var photoImage = document.createElement("img");
@@ -95,6 +81,12 @@ photoImage.src = photo.fields.photo_image[0].url;
 photoContainer.append(photoImage);
 
 
+// add event listener 
+// when user clicks on container, image will appear or dissapear
+photoContainer.addEventListener("click", function(){
+  photoImage.classList.toggle("active");
+
+})
 
 
   });
@@ -102,9 +94,6 @@ photoContainer.append(photoImage);
 
 
 }
-
-
-
 
 
 
@@ -153,9 +142,8 @@ function dragElement(elmnt) {
   }
 
   function closeDragElement() {
-  // stop moving when mouse button is released
+  /* stop moving when mouse button is released:*/
   document.onmouseup = null;
   document.onmousemove = null;
   }
 }
-

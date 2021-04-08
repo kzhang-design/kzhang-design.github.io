@@ -12,29 +12,12 @@ h1 {
 
 
 
-.hidden {
-    display: none !important;
-  }
-
-
-
-#navi {
+#mydiv {
     position: absolute;
     z-index: 0;
     border: 1px solid #3a3a3a;
     text-align: center;
     cursor: move;
-    margin-left: 60vw;
-  }
-
-
-  #mydiv {
-    position: absolute;
-    z-index: 0;
-    border: 1px solid #3a3a3a;
-    text-align: center;
-    cursor: move;
-
   }
 
 
@@ -64,19 +47,8 @@ padding-top: .5rem;
     filter: drop-shadow(2px 2px 2px #b1abab);
 }
 
-.image-container {
-    width: 400px;
-    margin-left: 10px;
-    align-self: right;
-position: absolute;
-        border-radius: 25px;
-        cursor:initial;
-        overflow:auto;
-    }
-
-
 .photo-image {
-    width: 400px;
+    width: 200%;
     height: auto;
     display: none;
 
@@ -87,8 +59,5 @@ position: absolute;
     display: block;
 }
 
-.photo-image.none {
-    display: none;
-}
 
 
