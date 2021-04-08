@@ -67,11 +67,7 @@ photoTitle.classList.add("photo-title");
 photoTitle.innerText = photo.fields.portrait_title;
 photoContainer.append(photoTitle);
 
-// add description to  container
-var photoDescription = document.createElement("h1");
-photoDescription.classList.add("photo-description");
-photoDescription.innerText = photo.fields.description;
-photoContainer.append(photoDescription);
+
 
 //////////////////////////////
 
@@ -79,6 +75,7 @@ photoContainer.append(photoDescription);
 // when user clicks on container, image will appear or dissapear
 photoContainer.addEventListener("click", function(){
   photoImage.classList.toggle("active");
+  photoDescription.classList.toggle("active");
 })
 
 
@@ -94,6 +91,12 @@ photoImage.classList.add("photo-image");
 photoImage.src = photo.fields.photo_image[0].url;
 photoContainer.append(photoImage);
 
+
+// add description to  container
+var photoDescription = document.createElement("h1");
+photoDescription.classList.add("photo-description");
+photoDescription.innerText = photo.fields.description;
+photoContainer.append(photoDescription);
 
 
 

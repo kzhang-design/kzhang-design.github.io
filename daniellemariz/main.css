@@ -21,11 +21,9 @@ h1 {
 #navi {
     position: absolute;
     z-index: 0;
-    border: 1px solid #3a3a3a;
     text-align: center;
-    cursor: move;
     margin-left: 60vw;
-  }
+}
 
 
   #mydiv {
@@ -41,10 +39,9 @@ h1 {
 
 
 .frame {
- margin: auto;
-width: 400px;
-height: 80vh;
-background-color: rgb(235, 229, 229);
+ margin: 0;
+width: 200px;
+height: 100vh;
 overflow: auto;
 }
 
@@ -52,16 +49,14 @@ overflow: auto;
 
 .photo-container {
 padding-top: .5rem;
-    margin: 1rem;
+    margin-top: 1rem;
+    height: 50px;
    border: 1px solid black;
    background-color: white;
-    border-radius: 25px;
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: 1fr 1fr;
-    cursor:initial;
+    border-radius: 50%;
+    align-content:center;
+    cursor:default;
     overflow: auto;
-    filter: drop-shadow(2px 2px 2px #b1abab);
 }
 
 .image-container {
@@ -69,9 +64,9 @@ padding-top: .5rem;
     margin-left: 10px;
     align-self: right;
 position: absolute;
-        border-radius: 25px;
         cursor:initial;
         overflow:auto;
+        cursor: move;
     }
 
 
@@ -79,16 +74,19 @@ position: absolute;
     width: 400px;
     height: auto;
     display: none;
-
-
 }
+
 
 .photo-image.active {
     display: block;
 }
 
-.photo-image.none {
+.photo-description {
     display: none;
+}
+
+.photo-description.active {
+    display: block;
 }
 
 
