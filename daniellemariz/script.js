@@ -61,11 +61,11 @@ var photoContainer = document.createElement("div");
 photoContainer.classList.add("photo-container");
 document.querySelector(".container").append(photoContainer);
 
-// add photo titles to the containers
-var photoTitle = document.createElement("h1");
-photoTitle.classList.add("photo-title");
-photoTitle.innerText = photo.fields.portrait_title;
-photoContainer.append(photoTitle);
+// image to container
+var photoImage = document.createElement("img");
+photoImage.classList.add("photo-image2");
+photoImage.src = photo.fields.photo_image[0].url;
+photoContainer.append(photoImage);
 
 
 
@@ -76,6 +76,7 @@ photoContainer.append(photoTitle);
 photoContainer.addEventListener("click", function(){
   photoImage.classList.toggle("active");
   photoDescription.classList.toggle("active");
+  portraitTitle.classList.toggle("active");
 })
 
 
@@ -91,12 +92,18 @@ photoImage.classList.add("photo-image");
 photoImage.src = photo.fields.photo_image[0].url;
 photoContainer.append(photoImage);
 
+// add photo titles to the containers
+var photoTitle = document.createElement("h1");
+photoTitle.classList.add("photo-title");
+photoTitle.innerText = photo.fields.portrait_title;
+photoContainer.append(photoTitle);
 
 // add description to  container
 var photoDescription = document.createElement("h1");
 photoDescription.classList.add("photo-description");
 photoDescription.innerText = photo.fields.description;
 photoContainer.append(photoDescription);
+
 
 
 
