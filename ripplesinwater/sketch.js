@@ -6,6 +6,7 @@
 
 // Algorithm: https://web.archive.org/web/20160418004149/http://freespace.virgin.net/hugo.elias/graphics/x_water.htm
 
+
 let cols;
 let rows;
 let current; // = new float[cols][rows];
@@ -29,6 +30,7 @@ function mouseDragged() {
   previous[mouseX][mouseY] = 1000;
 }
 
+// This is the canvas that is shown
 function draw() {
   background(0);
 
