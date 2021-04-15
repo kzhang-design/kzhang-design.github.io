@@ -1,0 +1,32 @@
+
+
+
+h1 {
+position:fixed;
+    font-family: Helvetica, sans-serif;
+    font-size: small;
+    font-weight: lighter;
+    color: #68c0cc;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+
+.div {
+    border-radius: 50%;
+    background-image: linear-gradient(#68c0cc, #6f68cc);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    opacity: .5;
+}
+
+
+.pond {
+    border-radius: 50%;
+}
+
+.style {
+margin: 0;
+}
