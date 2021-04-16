@@ -80,9 +80,11 @@ photoContainer.addEventListener("click", function(){
 })
 
 
+var mainContainer = document.querySelector(".container1");
 var photoContainer = document.createElement("div");
 photoContainer.classList.add("image-container");
-document.querySelector(".container1").append(photoContainer);
+mainContainer.innerHTML = "";
+mainContainer.append(photoContainer);
 
 
 

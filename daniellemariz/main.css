@@ -24,12 +24,21 @@ h2 {
   }
 
 
+.container {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    position: relative;
+}
+
+
 /* The div that holds the navigation and places it on a page*/
 #navi {
     position: absolute;
     z-index: 0;
     text-align: center;
-    margin-left: 70vw;
+    margin-top: 30vh;
 }
 
 
@@ -48,7 +57,7 @@ h2 {
 /* The div that hold the navigation and makes it scrollable*/
 .frame {
  margin: 0;
-width: 300px;
+width: 66.6vw;
 height: 100vh;
 overflow: auto;
 }
@@ -64,12 +73,13 @@ padding-top: .5rem;
     align-content:center;
     cursor:default;
     overflow:hidden;
+    
 }
 
 /* The image in the navigations*/
 .photo-image2 {
     width: 100%;
-    margin-top: -100px;
+    margin-top: -50px;
     height: auto;
     display: block;
     filter: invert(100%);
@@ -81,7 +91,7 @@ padding-top: .5rem;
 /* The container of the pop up box*/
 .image-container {
     width: auto;
-    margin-left: 10px;
+    margin-left: 100px;
     align-self: right;
 position: absolute;
         cursor:initial;
