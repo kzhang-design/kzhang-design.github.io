@@ -80,10 +80,9 @@ photoContainer.addEventListener("click", function(){
 })
 
 
-
 var photoContainer = document.createElement("div");
 photoContainer.classList.add("image-container");
-document.querySelector(".container1").append(photoContainer);
+document.querySelector("#mydiv").append(photoContainer);
 
 
 
@@ -92,6 +91,7 @@ var photoImage = document.createElement("img");
 photoImage.classList.add("photo-image");
 photoImage.src = photo.fields.photo_image[0].url;
 photoContainer.append(photoImage);
+
 
 // add photo titles to the containers
 var photoTitle = document.createElement("h1");
@@ -108,9 +108,8 @@ photoContainer.append(photoDescription);
 
   });
 
-  
+ 
 
-  
 }
 
 
@@ -118,10 +117,22 @@ photoContainer.append(photoDescription);
 
 
 
+// CURSOR //
+let mouseCursor = document.querySelector(".cursor");
+
+window.addEventListener('mousemove', cursor);
+
+function cursor(e){
+  mouseCursor.style.top = e.pageY + 'px';
+  mouseCursor.style.left = e.pageX + 'px';
+}
 
 
 
 
+
+
+/*
 
 //Make the DIV element draggagle:
 // dragElement(document.getElementById("mydiv"));
@@ -169,3 +180,4 @@ function dragElement(elmnt) {
   }
 }
 
+*/
