@@ -129,17 +129,6 @@ function cursor(e){
 
 
 
-let mouseCursor = document.querySelector(".cursor");
-
-window.addEventListener('touchdown', cursor);
-
-function cursor(e){
-  mouseCursor.style.top = e.pageY + 'px';
-  mouseCursor.style.left = e.pageX + 'px';
-}
-
-
-
 
 /*
 

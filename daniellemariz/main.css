@@ -156,7 +156,6 @@ padding-top: .5rem;
     height: auto;
     display: block;
     filter: invert(100%);
-    
 }
 
 
@@ -169,9 +168,8 @@ padding-top: .5rem;
 /* The container of the pop up box*/
 .image-container {
     width: 35vw;
-
     align-self: right;
-position: fixed;
+    position: fixed;
         cursor:initial;
         overflow:auto;
         z-index: -3;
@@ -265,9 +263,10 @@ position: fixed;
     height: auto;
     display: none;
     border-radius: 50%;
-    filter: invert(100%);
     margin: auto;
 }
+
+
 
 
 }
