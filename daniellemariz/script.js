@@ -76,7 +76,7 @@ photoContainer.append(photoImage);
 photoContainer.addEventListener("click", function(){
   photoImage.classList.toggle("active");
   photoDescription.classList.toggle("active");
-  portraitTitle.classList.toggle("active");
+  photoTitle.classList.toggle("active");
 })
 
 
