@@ -1,6 +1,8 @@
 
 body {
-    font-family: Arial;
+    font-family: stevie-sans,sans-serif;
+font-weight: 400;
+font-style: normal;
     background-color: rgb(228, 220, 220);
     cursor: none;
 }
@@ -13,16 +15,20 @@ h1 {
 }
 
 h2 {
-    font-weight: normal;
-    font-size: 6rem;
+    font-family: moret,serif;
+font-weight: 400;
+font-style: normal;
+font-size: 7rem;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 p {
     padding: 0;
     margin-left: 10px;
     font-size: 1rem;
+    text-align: center;
 }
 
 
@@ -47,9 +53,34 @@ p {
 }
 
 
+.buttholder{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    font-size: .7rem;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+}
+
+.butttype{
+    font-size: .7rem;
+}
 
 
-
+.btn {
+    border: 1px solid black;
+    margin: .2rem;
+    outline: none;
+    padding: .7rem 1rem;
+    background-color: rgb(228, 220, 220);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: .7rem;
+  }
+  
+.formobile {
+    display: block;
+}
 
 
 .cursor {
@@ -121,7 +152,6 @@ overflow:hidden;
   margin-left: 20vw;
     height: 100vh;
     width: 35vw;
-    
     background-image: linear-gradient( rgb(228, 220, 220), rgb(95, 84, 84));
     display: block;
     position: fixed;
@@ -222,6 +252,8 @@ padding-top: .5rem;
 
 
 
+
+
 @media only screen and (max-width: 1000px) {
    
     h2 {
@@ -282,7 +314,36 @@ padding-top: .5rem;
 
 
 
+.buttholder{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    font-size: .7rem;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+}
 
+.butttype{
+    font-size: .5rem;
+}
+
+
+.btn {
+    border: 1px solid black;
+    margin: .2rem;
+    outline: none;
+    padding: .5rem .7rem;
+    background-color: rgb(228, 220, 220);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: .7rem;
+  }
+  
+  
+  .formobile {
+    display: none;
+}
 
 
 }
