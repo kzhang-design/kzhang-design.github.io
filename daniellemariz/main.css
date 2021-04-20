@@ -228,6 +228,7 @@ padding-top: .5rem;
         font-weight: normal;
         font-size: 3rem;
         margin: 0;
+        margin-top: 20%;
         padding: 0;
     }
     
@@ -274,6 +275,12 @@ padding-top: .5rem;
     filter: none;
     margin: auto;
 }
+
+.cursor {
+   display: none;
+}
+
+
 
 
 
