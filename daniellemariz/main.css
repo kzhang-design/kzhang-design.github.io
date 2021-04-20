@@ -53,14 +53,16 @@ p {
 
 
 .cursor {
-    width: 25rem;
-    height: 25rem;
+    width: 20rem;
+    height: 20rem;
     border-radius: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
     pointer-events: none;
     transition: all .2s ease;
     backdrop-filter: invert();
+    box-shadow: 50px 10px 113px rgb(228, 220, 220) inset;
+    
 }
 
 
@@ -170,7 +172,7 @@ padding-top: .5rem;
     width: 35vw;
     align-self: right;
     position: fixed;
-        cursor:initial;
+    cursor: none;
         overflow:auto;
         z-index: -3;
     }
@@ -184,6 +186,7 @@ padding-top: .5rem;
     border-radius: 50%;
     filter: invert(100%);
     margin: auto;
+    cursor: none;
 }
 
 
@@ -213,6 +216,11 @@ padding-top: .5rem;
     text-align: center;
     margin-top: 10px;
 }
+
+
+
+
+
 
 @media only screen and (max-width: 1000px) {
    
