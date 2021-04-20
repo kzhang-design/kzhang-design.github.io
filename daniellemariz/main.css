@@ -55,21 +55,18 @@ p {
 
 .buttholder{
     display: flex;
-    width: 80%;
+    width: 60%;
     margin: auto;
     font-size: .7rem;
-    border: 1px solid black;
     margin-bottom: 1rem;
+    justify-content: center;
 }
 
-.butttype{
-    font-size: .7rem;
-}
 
 
 .btn {
     border: 1px solid black;
-    margin: .2rem;
+    margin: .3rem;
     outline: none;
     padding: .7rem 1rem;
     background-color: rgb(228, 220, 220);
@@ -316,16 +313,11 @@ padding-top: .5rem;
 
 .buttholder{
     display: flex;
-    flex-direction: column;
-    width: 60%;
+    flex-direction: row;
+    width: 20%;
     margin: auto;
     font-size: .7rem;
-    border: 1px solid black;
     margin-bottom: 1rem;
-}
-
-.butttype{
-    font-size: .5rem;
 }
 
 
