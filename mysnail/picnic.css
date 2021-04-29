@@ -1,0 +1,92 @@
+:root {
+    --pixel-size: 2px;
+    --grid-cell: calc( var(--pixel-size) * 16);
+    --bg: #e4c89f;
+ }
+ @media( min-width: 700px ) {
+    :root {
+       --pixel-size: 3px;
+    }
+ }
+ @media( min-width: 1000px ) {
+    :root {
+       --pixel-size: 4px;
+    }
+ }
+
+
+ .toy {
+    cursor: pointer;
+    position: absolute;
+ }
+ 
+
+ 
+ .toy1 {
+    background-image: url(picnic/leaf.png);
+    width: calc( var(--grid-cell)* 5.5 );
+    height: calc( var(--grid-cell)* 5.5 );
+    background-size: 100%;
+    left: calc(var(--pixel-size) * -10);
+    top: calc(var(--pixel-size) * 65);
+ }
+ .toy1.rescued {
+    left: calc(var(--pixel-size) * 30);
+    top: calc(var(--pixel-size) * 55);
+ }
+ 
+ .toy2 {
+    background-image: url(picnic/cap.png);
+    width: calc( var(--grid-cell)* 1.5 );
+    height: calc( var(--grid-cell)* 1.5 );
+    background-size: 100%;
+    left: calc(var(--pixel-size) * 170);
+    top: calc(var(--pixel-size) * 90);
+ }
+ .toy2.rescued {
+    left: calc(var(--pixel-size) * 80);
+    top: calc(var(--pixel-size) * 85);
+ }
+ 
+ .toy3 {
+   background-image: url(picnic/mushroom.png);
+   width: calc( var(--grid-cell)* 2 );
+   height: calc( var(--grid-cell)* 2 );
+   background-size: 100%;
+   left: calc(var(--pixel-size) * 155);
+   top: calc(var(--pixel-size) * 54);
+ }
+ .toy3.rescued {
+   left: calc(var(--pixel-size) * 60);
+   top: calc(var(--pixel-size) * 70);
+ }
+ 
+ .toy4 {
+   background-image: url(picnic/berry.png);
+   width: calc( var(--grid-cell)* 1.5 );
+   height: calc( var(--grid-cell)* 1.5 );
+   background-size: 100%;
+   left: calc(var(--pixel-size) * 20);
+   top: calc(var(--pixel-size) * 18);
+ }
+ .toy4.rescued {
+   left: calc(var(--pixel-size) * 45);
+   top: calc(var(--pixel-size) * 80);
+ }
+ 
+ 
+ .text-container {
+    display: flex;
+    justify-content: center;
+    z-index: 4;
+    margin-bottom: -40rem;
+ }
+ .text-container p {
+    text-align: center;
+    font-family: futura;
+    background: #000;
+    color: #fff;
+    padding: 1em;
+    margin: 0;
+    font-size: 1.1em;
+ }

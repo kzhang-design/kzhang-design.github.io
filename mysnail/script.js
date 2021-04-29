@@ -142,33 +142,21 @@ var i;
 // Two images side by side
 function red() {
     for (i = 0; i < elements.length; i++) {
-    elements[i].style.background = "url('snail/redsnail.png')";  // IE10
-    elements[i].style.backgroundSize = "100%";
-    elements[i].style.position = "absolute"; 
-    elements[i].style.width = "calc( var(--grid-cell)* 8 )"; 
-    elements[i].style.height = "calc( var(--grid-cell)* 8 )"; 
+    elements[i].style.filter = "hue-rotate(180deg)";
   }
 }
 
 // five images side by side
 function blue() {
   for (i = 0; i < elements.length; i++) {
-    elements[i].style.background = "url('snail/bluesnail.png')";  // IE10
-    elements[i].style.backgroundSize = "100%"; 
-    elements[i].style.position = "absolute"; 
-    elements[i].style.width = "calc( var(--grid-cell)* 8 )"; 
-    elements[i].style.height = "calc( var(--grid-cell)* 8 )"; 
+   elements[i].style.filter = "hue-rotate(60deg)";
   }
 }
 
 // 10 images side by side
 function green() {
   for (i = 0; i < elements.length; i++) {
-    elements[i].style.background = "url('snail/greensnail.png')";  // IE10
-    elements[i].style.backgroundSize = "100%"; 
-    elements[i].style.position = "absolute"; 
-    elements[i].style.width = "calc( var(--grid-cell)* 8 )"; 
-    elements[i].style.height = "calc( var(--grid-cell)* 8 )"; 
+   elements[i].style.filter = "hue-rotate(0)";
 }
 }
 

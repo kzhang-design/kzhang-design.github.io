@@ -8,22 +8,26 @@
     <link rel="stylesheet" href="https://use.typekit.net/jfl3ids.css">
     <link rel="stylesheet" href="https://use.typekit.net/jfl3ids.css">
     <!-- add reset to create consistency between browsers and devices. -->
-    <link rel="stylesheet" type="text/css" href="./reset.css">
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./picnic.css">
     <!-- add link to your javascript. be sure it includes "defer" -->
     <script type="text/javascript" src="./script.js" defer></script>
+    <script type="text/javascript" src="./picnic.js" defer></script>
 </head>
 
 <body>
 
     <div class="buttholder">
-
         <input type="text" id="input" placeholder="Name your snail!">
         <button class="btn" onclick="red()">Red</button>
         <button class="btn" onclick="blue()">Blue</button>
         <button class="btn" onclick="green()">Green</button>
-        
      </div>
+
+
+<div class="text-container">
+     <p class="js-text">Let's have a picnic!</p>
+ </div>
 
     
 <div class="frame">
@@ -35,6 +39,17 @@
     
     <div class="camera">
        <div class="map pixel-art">
+
+   
+        <!-- Toys -->
+        <div class="pixelart toy toy1" story-point="Bone"></div>
+        <div class="pixelart toy toy2" story-point="Ball"></div>
+        <div class="pixelart toy toy3" story-point="Rubber"></div>
+        <div class="pixelart toy toy4" story-point="Rabbit"></div>
+        
+
+
+
           <div class="character" facing="down" walking="true">
              <div class="shadow pixel-art"></div>
              <div class="character_spritesheet pixel-art"></div>

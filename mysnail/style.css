@@ -80,14 +80,14 @@ h1 {
     height: calc(var(--pixel-size) * 144);
     outline: var(--pixel-size) solid rgb(128, 156, 132);
     z-index:1; 
-    position:relative;
+    position:absolute;
  }
  
  .camera {
     width: calc(var(--pixel-size) * 160);
     height: calc(var(--pixel-size) * 144);
     overflow: hidden;
-    background: #789e7b;
+    background: #b3e2ec;
     position:relative;
  }
  
@@ -124,7 +124,7 @@ h1 {
     width: calc( var(--grid-cell)* 8 );
     height: calc( var(--grid-cell)* 8 );
  }
- 
+  
  .character[facing="right"] .character_spritesheet {
     background-position-y: calc( var(--pixel-size) * -32 );
  }
