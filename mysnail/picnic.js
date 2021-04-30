@@ -1,61 +1,79 @@
 //This data could come from a CMS/editor/any nicer UI for editing game events
 var scenarios = [
     {
-       //No toys
+       //No Things
        "required": [],
-       "bypass": ["OneToy"],
+       "bypass": ["OneThing"],
        "text": "Let's have a picnic! We need a mat"
     },
     {
-       //Just one toy: the bone
-       "required": ["Bone"],
-       "bypass": ["TwoToys"],
+       //Just one Thing: the leaf
+       "required": ["Leaf"],
+       "bypass": ["TwoThings"],
        "text": "Nice! How about let's get something to drink?"
     },
     {
-       //Any one toy
-       "required": ["OneToy"],
-       "bypass": ["TwoToys"],
-       "text": "Let's find some stuff to eat!",
+      //Just one Thing: the cap
+      "required": ["Cap"],
+      "bypass": ["TwoThings"],
+      "text": "Nice! How about let's get something for you to eat?"
+   },
+   {
+      //Just one Thing: the Berry
+      "required": ["Berry"],
+      "bypass": ["TwoThings"],
+      "text": "Nice! Can you find me my favorite food?"
+   },
+   {
+      //Just one Thing: the mushroom
+      "required": ["Mushroom"],
+      "bypass": ["TwoThings"],
+      "text": "Nice! How about let's get something for you to eat?"
+   },
+    {
+       //Any two but no Berry 
+       "required": ["TwoThings"],
+       "bypass": ["Berry", "ThreeThings"],
+       "text": "We're getting there! How about something for you to eat?",
     },
     {
-       //Any two but no rabbit toy
-       "required": ["TwoToys"],
-       "bypass": ["Rabbit", "ThreeToys"],
-       "text": "We're getting there! Can you help me get me some of my favorite food?",
-    },
-    {
-       //Any two, one is rabbit
-       "required": ["TwoToys"],
-       "bypass": ["ThreeToys"],
-       "text": "So glad we have the rabbit.",
-    },
+      //Any two but no Cap 
+      "required": ["TwoThings"],
+      "bypass": ["Cap", "ThreeThings"],
+      "text": "We're getting there! How about something to drink?",
+   },
+   {
+      //Any two but no Cap 
+      "required": ["TwoThings"],
+      "bypass": ["Cap", "ThreeThings"],
+      "text": "We're getting there! How about something to drink?",
+   },
     {
        //Any three
-       "required": ["ThreeToys"],
-       "bypass": ["FourToys"],
+       "required": ["ThreeThings"],
+       "bypass": ["FourThings"],
        "text": "Only one left to go!",
     },
     {
        //All four!
-       "required": ["FourToys"],
+       "required": ["FourThings"],
        "bypass": [],
        "text": "Yay! We have the perfect picnic!",
     },  
  ]
  
  var computedStoryPoints = {
-    "requires": [ "Bone", "Rubber", "Ball", "Rabbit" ],
+    "requires": [ "Leaf", "Cap", "Mushroom", "Berry" ],
     "quantities": [
-       [1, "OneToy"],
-       [2, "TwoToys"],
-       [3, "ThreeToys"],
-       [4, "FourToys"]
+       [1, "OneThing"],
+       [2, "TwoThings"],
+       [3, "ThreeThings"],
+       [4, "FourThings"]
     ]
  }
  
  //Functionality for click binding to add/remove story points
- var toys = document.querySelectorAll(".toy");
+ var toys = document.querySelectorAll(".thing");
  toys.forEach(toy => {
     toy.addEventListener("click", () => {
        toy.classList.toggle("rescued");

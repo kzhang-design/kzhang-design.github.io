@@ -1,3 +1,10 @@
+
+var debug = document.querySelector("#debug");
+
+
+
+
+
 var character = document.querySelector(".character");
 var map = document.querySelector(".map");
 
@@ -24,15 +31,28 @@ const placeCharacter = () => {
    character.setAttribute("walking", held_direction ? "true" : "false");
    
    //Limits (gives the illusion of walls)
-   var leftLimit = -8;
-   var rightLimit = (16 * 11)+8;
+   var leftLimit = -10;
+   var rightLimit = (16 * 11)+10;
    var topLimit = -8 + 32;
    var bottomLimit = (16 * 7);
+
+var waterrightLimit = (16 * 7)+10;
+var waterbottomLimit = (16 * 5);
+
    if (x < leftLimit) { x = leftLimit; }
    if (x > rightLimit) { x = rightLimit; }
    if (y < topLimit) { y = topLimit; }
    if (y > bottomLimit) { y = bottomLimit; }
-   
+
+
+   debug.innerText = `${x}, ${y}`
+
+
+   if (x >= waterrightLimit && y >= waterbottomLimit) {
+      x = waterrightLimit; y = waterbottomLimit;
+   }
+
+
    
    var camera_left = pixelSize * 66;
    var camera_top = pixelSize * 42;
