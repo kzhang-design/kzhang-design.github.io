@@ -1,18 +1,16 @@
 :root {
     --pixel-size: 2px;
     --grid-cell: calc( var(--pixel-size) * 16);
-    --bg: #e4c89f;
+    --bg: #ecddc1;
  }
- @media( min-width: 700px ) {
+ @media( min-width: 600px ) {
     :root {
        --pixel-size: 3px;
     }
+
  }
- @media( min-width: 1000px ) {
-    :root {
-       --pixel-size: 4px;
-    }
- }
+
+ 
  /* @media( min-width: 1000px ) {
     :root {
        --pixel-size: 5px;
@@ -22,19 +20,19 @@
 
 
  .buttholder{
-     background-color: rgb(138, 138, 138);
+ 
     display: flex;
+    flex-direction: row;
     position: absolute;
-    margin-top: -35rem;
+    width: 15rem;
+    height: 3rem;
+    margin-top: -33rem;
     font-size: .7rem;
-    z-index: 3;
+    z-index: 9;
     justify-content: center;
 }
 
-
-
 .btn {
-    border: 1px solid black;
     margin: .3rem;
     outline: none;
     padding: .7rem 1rem;
@@ -43,9 +41,42 @@
     cursor: pointer;
     font-size: .7rem;
   }
+.btn1{
+   background-color: rgb(255, 83, 121);
+}
+.btn2{
+   background-color: rgb(64, 108, 252);
+}
+.btn3{
+   background-color: rgb(93, 202, 160);
+}
   
+.colordes {
+   text-align: center;
+   font-size: .7rem;
+   font-family: meatball, sans-serif;
+}
+
+.nameholder {
+   display: flex;
+   flex-direction: row;
+   position: absolute;
+   margin-top: -40rem;
+   height: 3rem;
+   font-size: small;
+   z-index: 9;
+   justify-content: center;
+}
 
 
+#input{
+   border: 1px solid black;
+   background-color: none;
+   width: 15rem;
+   text-align: center;
+   font-family: meatball, sans-serif;
+   color: black;
+}
 
 
 
@@ -57,22 +88,24 @@
  
 
 h1 {
-    font-family: futura;
+    font-family: meatball, sans-serif;
     font-weight: lighter;
     font-size: medium;
     text-transform: uppercase;
 }
 
  body {
-    background: var(--bg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   background: var(--bg);
+   display: flex;
+   align-items: center;
+   justify-content: center;
  }
  
  .pixel-art {
     image-rendering: pixelated;
  }
+
+
  
  .frame {
     /* This is just for Pen decoration */
@@ -87,7 +120,7 @@ h1 {
     width: calc(var(--pixel-size) * 160);
     height: calc(var(--pixel-size) * 144);
     overflow: hidden;
-    background: #b3e2ec;
+    background: #c9eef7;
     position:relative;
  }
  
@@ -233,3 +266,35 @@ h1 {
     right:calc(var(--pixel-size) * 2);
     width: calc(var(--pixel-size) * 75)
  }
+
+ .text-container {
+   display: flex;
+   justify-content: center;
+   z-index: 4;
+   width: 15rem;
+   margin-bottom: -35rem;
+}
+.text-container p {
+   text-align: center;
+   font-family: meatball, sans-serif;
+   background: rgb(128, 156, 132);
+   color: #fff;
+   padding: .5em;
+   margin: 0;
+   font-size: 1.1em;
+}
+
+@media only screen and (max-width: 600px) {
+
+.buttholder {
+   margin-top: -28rem;
+}
+.nameholder{
+   margin-top: -35rem;
+}
+.text-container{
+   margin-bottom: -28rem;
+}
+
+
+}

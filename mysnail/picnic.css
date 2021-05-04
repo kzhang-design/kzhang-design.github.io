@@ -1,17 +1,12 @@
 :root {
     --pixel-size: 2px;
     --grid-cell: calc( var(--pixel-size) * 16);
-    --bg: #e4c89f;
  }
- @media( min-width: 700px ) {
+ @media( min-width: 600px ) {
     :root {
        --pixel-size: 3px;
     }
- }
- @media( min-width: 1000px ) {
-    :root {
-       --pixel-size: 4px;
-    }
+    
  }
 
 
@@ -75,18 +70,3 @@
  }
  
  
- .text-container {
-    display: flex;
-    justify-content: center;
-    z-index: 4;
-    margin-bottom: -35rem;
- }
- .text-container p {
-    text-align: center;
-    font-family: futura;
-    background: #000;
-    color: #fff;
-    padding: 1em;
-    margin: 0;
-    font-size: 1.1em;
- }

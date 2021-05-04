@@ -14,6 +14,9 @@ var y = 34;
 var held_directions = []; //State of which arrow keys we are holding down
 var speed = .8; //How fast the character moves in pixels per frame
 
+let lastX;
+let lastY;
+
 const placeCharacter = () => {
    
    var pixelSize = parseInt(
@@ -37,7 +40,16 @@ const placeCharacter = () => {
    var bottomLimit = (16 * 7);
 
 var waterrightLimit = (16 * 7)+10;
-var waterbottomLimit = (16 * 5);
+var waterbottomLimit = (16 * 5.3);
+
+var waterleftLimit = (16 * 1.5)+10;
+var waterleftbottomLimit = (16 * 6.7);
+
+var waterleft2Limit = 5;
+var waterleft2bottomLimit = (16 * 6);
+
+var mushroomrightLimit = (16 * 8)+10;
+var mushroombottomLimit = (16 * 3.2);
 
    if (x < leftLimit) { x = leftLimit; }
    if (x > rightLimit) { x = rightLimit; }
@@ -45,11 +57,19 @@ var waterbottomLimit = (16 * 5);
    if (y > bottomLimit) { y = bottomLimit; }
 
 
-   debug.innerText = `${x}, ${y}`
-
-
    if (x >= waterrightLimit && y >= waterbottomLimit) {
-      x = waterrightLimit; y = waterbottomLimit;
+      x = lastX; y = lastY;
+   }
+
+   if (x <= waterleftLimit && y >= waterleftbottomLimit) {
+      x = lastX; y = lastY;
+   }
+      if (x <= waterleft2Limit && y >= waterleft2bottomLimit) {
+      x = lastX; y = lastY;
+   }
+
+   if (x >= mushroomrightLimit && y <= mushroombottomLimit) {
+      x = lastX; y = lastY;
    }
 
 
@@ -67,6 +87,8 @@ const step = () => {
    placeCharacter();
    window.requestAnimationFrame(() => {
       step();
+      lastX = x;
+      lastY = y;
    })
 }
 step(); //kick off the first step!

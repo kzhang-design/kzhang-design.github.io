@@ -43,17 +43,35 @@ var scenarios = [
       "text": "We're getting there! How about something to drink?",
    },
    {
-      //Any two but no Cap 
+      //Any two but no leaf 
       "required": ["TwoThings"],
-      "bypass": ["Cap", "ThreeThings"],
-      "text": "We're getting there! How about something to drink?",
+      "bypass": ["Leaf", "ThreeThings"],
+      "text": "Nice! We still need something to put everything on, like a mat",
    },
     {
-       //Any three
-       "required": ["ThreeThings"],
+       //Three no leaf
+       "required": ["Cap", "Berry", "Mushroom"],
        "bypass": ["FourThings"],
-       "text": "Only one left to go!",
+       "text": "We just need something to put everything on, like a mat!",
     },
+    {
+      //Three no cap
+      "required": ["Leaf", "Berry", "Mushroom"],
+      "bypass": ["FourThings"],
+      "text": "Now we just need something to drink!",
+   },
+   {
+      //Three no berry
+      "required": ["Leaf", "Cap", "Mushroom"],
+      "bypass": ["FourThings"],
+      "text": "Now we just need something for you to eat!",
+   },
+   {
+      //Three no mushroom
+      "required": ["Leaf", "Berry", "Cap"],
+      "bypass": ["FourThings"],
+      "text": "Now we just need something for me to eat!",
+   },
     {
        //All four!
        "required": ["FourThings"],
