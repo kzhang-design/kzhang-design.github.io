@@ -77,6 +77,7 @@ var scenarios = [
        "required": ["FourThings"],
        "bypass": [],
        "text": "Yay! We have the perfect picnic!",
+
     },  
  ]
  
@@ -153,5 +154,8 @@ var scenarios = [
        return s.required.every(entry => known[entry])
     })
     
+
     document.querySelector(".js-text").textContent = scenario.text;
+
+    
  }
