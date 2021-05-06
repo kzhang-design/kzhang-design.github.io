@@ -91,11 +91,11 @@ var scenarios = [
  }
  
  //Functionality for click binding to add/remove story points
- var toys = document.querySelectorAll(".thing");
- toys.forEach(toy => {
-    toy.addEventListener("click", () => {
-       toy.classList.toggle("rescued");
-       toggleStoryPoint( toy.getAttribute("story-point") )
+ var things = document.querySelectorAll(".thing");
+ things.forEach(thing => {
+    thing.addEventListener("click", () => {
+       thing.classList.toggle("rescued");
+       toggleStoryPoint( thing.getAttribute("story-point") )
        refreshScenario();
     })
  });
